@@ -124,17 +124,17 @@ if(grumpy_flag){
     movement_speed = 5
     
     if(player_o.x &gt; fygar_o.x +15){
-    move_towards_point(player_o.x, fygar_o.y, movement_speed)
+        if(!place_meeting(x, y, wall_o))
+            move_towards_point(player_o.x, fygar_o.y, movement_speed)
         image_xscale = -1
-        }
-    else if (player_o.x &lt; fygar_o.x -15){
-    move_towards_point(player_o.x, fygar_o.y, movement_speed)
+    }else if(player_o.x &lt; fygar_o.x -15){
+        if(!place_meeting(x, y, wall_o))
+            move_towards_point(player_o.x, fygar_o.y, movement_speed)
         image_xscale = 1
-        }
-    else {
+    }else{
         image_speed = 0.5
         sprite_index = fygar_s_walk_angry
-        }
+    }
     
 }
 else{

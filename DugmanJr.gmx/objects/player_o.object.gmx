@@ -104,7 +104,7 @@ if(!death_flag){
   if(keyboard_check(ord(' ')) &amp;&amp; global.ground){
     global.velY = -22
     global.ground = false
-    audio_play_sound(jump_s_v2, 5, false);
+    audio_play_sound(jump_s_v2, 2, false);
     show_debug_message("JUMP")
   }
 }

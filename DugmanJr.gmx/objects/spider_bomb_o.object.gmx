@@ -28,7 +28,7 @@
             <string>image_index = random_range(0, 40)
 image_speed = 0.5
 
-pl_light_init(40, make_color_rgb(252, 150, 55), 0.6);
+pl_light_init(90, make_color_rgb(252, 150, 55), 0.6);
 </string>
           </argument>
         </arguments>
