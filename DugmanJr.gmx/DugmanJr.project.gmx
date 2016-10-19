@@ -12,6 +12,7 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\wood_s</sprite>
+    <sprite>sprites\reg_s</sprite>
     <sprite>sprites\vine_s</sprite>
     <sprite>sprites\pole_s</sprite>
     <sprite>sprites\stone_s</sprite>
@@ -33,12 +34,21 @@
       <sprite>sprites\fygar_s_stand</sprite>
       <sprite>sprites\fygar_s_walk</sprite>
     </sprites>
+    <sprites name="pooka">
+      <sprite>sprites\pooka_s</sprite>
+      <sprite>sprites\pooka_s_die</sprite>
+      <sprite>sprites\pooka_s_walk</sprite>
+    </sprites>
+    <sprite>sprites\light_s</sprite>
+    <sprite>sprites\pointer_s</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\nignt_b</background>
     <background>background\stars_b</background>
     <background>background\bg2_b</background>
     <background>background\bg3_b</background>
+    <background>background\bg4_b</background>
+    <background>background\bg5_b</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -61,12 +71,17 @@
     <script>scripts\pl_set_blurring.gml</script>
     <script>scripts\pl_set_vivid.gml</script>
     <script>scripts\pl_update.gml</script>
+    <script>scripts\menu_script.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
     <shader type="GLSLES">shaders\pl_shd_gaussian_horizontal.shader</shader>
     <shader type="GLSLES">shaders\pl_shd_gaussian_vertical.shader</shader>
   </shaders>
+  <fonts name="fonts">
+    <font>fonts\fnt_mono</font>
+    <font>fonts\fnt_mono_lg</font>
+  </fonts>
   <objects name="objects">
     <objects name="falling">
       <object>objects\stone_o</object>
@@ -117,8 +132,13 @@
       <object>objects\objLightBig</object>
       <object>objects\roomLightBright</object>
     </objects>
+    <object>objects\light_sprite_o</object>
+    <object>objects\menu_o</object>
+    <object>objects\pause_o</object>
+    <object>objects\menu_t</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room2</room>
     <room>rooms\main</room>
     <room>rooms\main_menu</room>
   </rooms>
