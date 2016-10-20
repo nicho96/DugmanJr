@@ -29,7 +29,7 @@
 
 /// Example big light object
 
-pl_light_init(360, make_color_rgb(252, 250, 255), 0.8);
+pl_light_init(270, make_color_rgb(252, 250, 255), 0.8);
 </string>
           </argument>
         </arguments>

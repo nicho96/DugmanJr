@@ -31,13 +31,14 @@ global.right = true
 global.ground = false
 image_speed = 0.5
 
+
 death_flag = false
 
 
 pl_light_init(90, make_color_rgb(252, 150, 55), 0.8);
 
-x = global.spawnx
-y = global.spawny
+x = global.spawnx 
+y = global.spawny 
 </string>
           </argument>
         </arguments>

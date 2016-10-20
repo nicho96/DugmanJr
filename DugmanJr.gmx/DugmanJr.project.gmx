@@ -42,6 +42,8 @@
     <sprite>sprites\light_s</sprite>
     <sprite>sprites\pointer_s</sprite>
     <sprite>sprites\fire_s</sprite>
+    <sprite>sprites\pointer_anim_2</sprite>
+    <sprite>sprites\sound_s</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\nignt_b</background>
