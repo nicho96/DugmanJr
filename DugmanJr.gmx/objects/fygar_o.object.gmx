@@ -110,7 +110,7 @@ if(alarm[0]==-1 &amp;&amp; !grumpy_flag){
         image_speed = 0.5
     }else{
         sprite_index = fygar_s_stand
-        image_speed = 0.2
+        image_speed = 0.3
         move_towards_point(fygar_o.x, fygar_o.y, 0)
         movement_delay = random_range(25, 50);
     }
