@@ -118,6 +118,7 @@ if(!death_flag){
   if(keyboard_check(ord(' ')) &amp;&amp; global.ground){
     global.velY = -22
     global.ground = false
+    if(global.sound)
     audio_play_sound(jump_s_v2, 2, false);
     show_debug_message("JUMP")
   }
