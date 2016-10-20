@@ -25,21 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*image_speed = 0.5
-ground = false
-death_flag = false
-grumpy_flag = false
-gravity = 4
-movement_speed = 3
-alarm[0]=-1;
-movement_delay = random_range(20,50);
-
-pl_light_init(180, make_color_rgb(252, 150, 55), 0.4);
-freeze_flag = false
-*/
-
-//variables
-death_flag = false
+            <string>death_flag = false
 dir = -1 
 movespeed = 4 
 grav = 0.2 
@@ -83,6 +69,7 @@ if(place_meeting(x+hsp, y,wall_o)){
         hsp = 0; 
         dir *= -1
 }
+
 if(place_meeting(x, y+vsp, wall_o)){
     while(!place_meeting(x, y+sign(vsp), wall_o)){
         y+=sign(vsp); 
@@ -109,7 +96,7 @@ if(place_meeting(x, y, fall_o)){
 else if(death_flag){
     if(sprite_index != pooka_s_die){
         sprite_index = pooka_s_die
-        image_speed = 0.2
+        image_speed = 0.3
         movespeed = 0
         if(image_index == 6){
             image_speed = 0
@@ -119,6 +106,30 @@ else if(death_flag){
     
 }
 
+if(!death_flag){
+if(place_meeting(x, y, player_o)){
+    
+    with(player_o){
+    sprite_index = player_s_die
+        death_flag = true
+    image_speed = 0.5;
+
+    if(player_o.sprite_index = 1){
+        audio_play_sound(swoosh_s, 10, false)
+    }
+
+    if (image_index &gt; 53){
+        image_speed = 0;
+        sprite_index = player_s
+
+            room_goto(main)
+
+            death_flag = false
+        
+    }
+}
+}
+}
 /*
 if(!death_flag){
 if(!place_meeting(x, y, wall_o)){
