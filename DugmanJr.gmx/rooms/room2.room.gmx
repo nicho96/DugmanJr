@@ -12,12 +12,14 @@
   <showcolour>-1</showcolour>
   <code>global.spawnx = 10
 global.spawny = 1800
-
+global.bombs = 0
+global.check_bombs = 0
 global.pause = 0
-global.sound = 1</code>
+global.sound = 0
+global.check_room = main</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
-  <clearDisplayBuffer>-1</clearDisplayBuffer>
+  <clearDisplayBuffer>0</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
     <w>0</w>

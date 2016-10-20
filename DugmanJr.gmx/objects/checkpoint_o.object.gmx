@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.5
+active = false
 </string>
           </argument>
         </arguments>
@@ -48,10 +49,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.spawnx = x
-global.spawny = y
-sprite_index = pointer_anim_2
-
+            <string>if(!active){
+    global.spawnx = x
+    global.spawny = y
+    global.check_room = room
+    global.check_bombs = global.bombs
+    sprite_index = pointer_anim_2
+    active = true
+}
 </string>
           </argument>
         </arguments>
