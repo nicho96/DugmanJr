@@ -57,7 +57,8 @@ pl_light_init(90, make_color_rgb(252, 150, 55), 0.8);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var velocity = 7
+            <string>if(global.pause) exit;
+var velocity = 7
 var offX = 0
 var offY = 0
 var climb_flag = false //A flag which is set if the player is in a climbable tile
