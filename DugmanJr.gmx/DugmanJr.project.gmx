@@ -92,20 +92,20 @@
       <object>objects\stone_o</object>
       <object>objects\fall_o</object>
     </objects>
-    <objects name="climb">
-      <object>objects\vine_o</object>
-      <object>objects\climb_down</object>
-      <object>objects\climb_up</object>
-      <object>objects\climb_multi</object>
-      <object>objects\pole_o</object>
-      <object>objects\ladder_o</object>
-      <object>objects\pole_o_trans</object>
-    </objects>
     <objects name="wall">
       <object>objects\wood_o</object>
       <object>objects\wall_o</object>
       <object>objects\box_o</object>
       <object>objects\brick_brown_o</object>
+      <objects name="climb">
+        <object>objects\vine_o</object>
+        <object>objects\climb_down</object>
+        <object>objects\climb_up</object>
+        <object>objects\climb_multi</object>
+        <object>objects\pole_o</object>
+        <object>objects\ladder_o</object>
+        <object>objects\pole_o_trans</object>
+      </objects>
     </objects>
     <object>objects\player_o</object>
     <objects name="pushable">

@@ -318,6 +318,7 @@ if(!death_flag){
           <argument>
             <kind>1</kind>
             <string>draw_set_color(c_white)
+draw_set_font(fnt_mono_sm)
 draw_text(10, 10, string(x) + " " + string(y))
 
 draw_sprite(spider_s, image_index, 800, 10)
