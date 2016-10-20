@@ -136,6 +136,7 @@
     <object>objects\menu_o</object>
     <object>objects\pause_o</object>
     <object>objects\menu_t</object>
+    <object>objects\checkpoint_o</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
