@@ -35,9 +35,9 @@
       <sprite>sprites\fygar_s_walk</sprite>
     </sprites>
     <sprites name="pooka">
-      <sprite>sprites\pooka_s</sprite>
+      <sprite>sprites\pooka_s_standing</sprite>
       <sprite>sprites\pooka_s_die</sprite>
-      <sprite>sprites\pooka_s_walk</sprite>
+      <sprite>sprites\pooka_s_walking</sprite>
     </sprites>
     <sprite>sprites\light_s</sprite>
     <sprite>sprites\pointer_s</sprite>
@@ -82,6 +82,7 @@
   <fonts name="fonts">
     <font>fonts\fnt_mono</font>
     <font>fonts\fnt_mono_lg</font>
+    <font>fonts\fnt_mono_sm</font>
   </fonts>
   <objects name="objects">
     <objects name="falling">
@@ -139,6 +140,7 @@
     <object>objects\pause_o</object>
     <object>objects\menu_t</object>
     <object>objects\checkpoint_o</object>
+    <object>objects\pooka_o</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>

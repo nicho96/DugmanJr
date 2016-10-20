@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,11 +26,27 @@
           <argument>
             <kind>1</kind>
             <string>draw_set_font(fnt_mono_lg); 
-draw_set_halign(fa_left); 
-draw_set_valign(fa_middle); 
+draw_set_halign(fa_center); 
 draw_set_color(c_white); 
 
-draw_text(0, 0, string("Dugman Jr"))
+draw_text(room_width/2, 50, string("Dugman Jr"))
+
+draw_set_font(fnt_mono); 
+draw_set_halign(fa_center); 
+draw_set_color(c_maroon); 
+draw_text(room_width/2, 110, string("COSC3026 - MIDTERM"))
+draw_set_font(fnt_mono_sm); 
+draw_set_color(c_ltgray);
+draw_text(room_width/2, 150, string("October 20th, 2016"))
+
+
+draw_set_halign(fa_center); 
+draw_set_font(fnt_mono_sm); 
+draw_set_color(c_teal); 
+draw_text(pooka_o.x, pooka_o.y - 50, string("Nicho Mercier"))
+
+draw_set_color(c_orange); 
+draw_text(fygar_o.x, fygar_o.y - 50, string("Angele Scott"))
 
 
 </string>
