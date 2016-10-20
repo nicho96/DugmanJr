@@ -80,6 +80,10 @@ if(!death_flag){
             }
         }
     }
+    
+    if(y &gt; 2010){
+        death_flag = true    
+    }
 
   if(keyboard_check(vk_shift)){
       velocity = 10
@@ -96,6 +100,14 @@ if(!death_flag){
     }
     global.right = true
       moved = true
+  }
+  
+  if(keyboard_check(ord('R'))){
+    death_flag = true
+  }
+  
+  if(keyboard_check(ord('T'))){
+    room_goto(room2)
   }
 
   if(keyboard_check(ord('D'))){
@@ -275,7 +287,7 @@ if(!death_flag){
         image_speed = 0;
         sprite_index = player_s
         
-        room_goto(global.check_room)
+        room_goto(main)
       
         death_flag = false
     }
