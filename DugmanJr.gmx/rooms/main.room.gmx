@@ -376,7 +376,8 @@
     <instance objName="stone_o" x="250" y="575" name="inst_6A4DC6E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="stone_o" x="400" y="575" name="inst_8D395F6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="checkpoint_o" x="379" y="1678" name="inst_4B866932" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="pause_o" x="250" y="1775" name="inst_39C6D1D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="pause_o" x="100" y="50" name="inst_010FB21F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="sound_o" x="175" y="75" name="inst_A6D86730" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
