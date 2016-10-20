@@ -73,8 +73,8 @@ global.spawny = 1800</code>
     <instance objName="box_o" x="900" y="350" name="inst_F4561275" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="box_o" x="950" y="350" name="inst_400EBD85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="control" x="0" y="0" name="inst_527A6E2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="light_sprite_o" x="300" y="550" name="inst_178EC916" locked="0" code="" scaleX="1.5306122303009" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="light_sprite_o" x="700" y="550" name="inst_F04AC81C" locked="0" code="" scaleX="1.5306122303009" scaleY="1.86868691444397" colour="4294967295" rotation="0"/>
+    <instance objName="light_sprite_o" x="300" y="500" name="inst_178EC916" locked="0" code="" scaleX="1.5306122303009" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="light_sprite_o" x="700" y="500" name="inst_F04AC81C" locked="0" code="" scaleX="1.5306122303009" scaleY="1.86868691444397" colour="4294967295" rotation="0"/>
     <instance objName="menu_o" x="402" y="476" name="inst_180E0D61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="menu_t" x="450" y="50" name="inst_9EDF2EBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fygar_o" x="725" y="319" name="inst_4DD93ADB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

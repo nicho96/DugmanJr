@@ -212,7 +212,6 @@
     <instance objName="ladder_o" x="475" y="1500" name="inst_34F7288C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ladder_o" x="475" y="1450" name="inst_26E82D6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ladder_o" x="475" y="1400" name="inst_0D927BF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLight" x="400" y="1525" name="inst_E43A1871" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ladder_o" x="575" y="1900" name="inst_37932DEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ladder_o" x="575" y="1850" name="inst_A7F05182" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ladder_o" x="575" y="1800" name="inst_F8CD9D62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -299,11 +298,12 @@
     <instance objName="light_sprite_o" x="275" y="1550" name="inst_35C41845" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="light_sprite_o" x="375" y="1800" name="inst_E3DBB21A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="light_sprite_o" x="675" y="1500" name="inst_A590E6AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="checkpoint_o" x="375" y="1575" name="inst_4BACCE3C" locked="0" code="" scaleX="1" scaleY="2.02040815353394" colour="4294967295" rotation="0"/>
     <instance objName="fire_o" x="250" y="1930" name="inst_76E4636C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fire_o" x="300" y="1930" name="inst_2D40578B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fire_o" x="350" y="1930" name="inst_26ED3C44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fire_o" x="400" y="1930" name="inst_98CEE25E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="pause_o" x="75" y="25" name="inst_83A1CF95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bar_o" x="400" y="1650" name="inst_C13FBC7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

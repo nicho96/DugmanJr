@@ -55,8 +55,10 @@ for(var i = 0; background_visible[i]-1; i++){
             <string>view_xview += 5 * keyboard_check(ord('D')) - keyboard_check(ord('A'))
 
     for(var i = 0; background_visible[i]-1; i++){
-    background_x[i] = bgParallax[i] * view_xview;
-}
+        background_x[i] = bgParallax[i] * view_xview;
+        
+            
+    }
 </string>
           </argument>
         </arguments>
