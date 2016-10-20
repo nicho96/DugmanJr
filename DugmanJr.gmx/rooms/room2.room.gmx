@@ -10,8 +10,10 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.spawnx = 10
-global.spawny = 1800
+  <code>//global.spawnx = 10
+//global.spawny = 1800
+global.spawnx = 775
+global.spawny = 600
 global.bombs = 0
 global.check_bombs = 0
 global.pause = 0
