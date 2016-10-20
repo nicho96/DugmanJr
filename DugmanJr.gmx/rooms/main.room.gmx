@@ -598,12 +598,12 @@
     <instance objName="fire_o" x="1950" y="25" name="inst_DDA238B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="fire_o" x="2000" y="25" name="inst_6C89A0C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="brick_brown_o" x="1650" y="275" name="inst_FD776814" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
-    <instance objName="brick_brown_o" x="1700" y="225" name="inst_846409F7" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
+    <instance objName="brick_brown_o" x="1700" y="275" name="inst_846409F7" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
     <instance objName="fire_o" x="1650" y="25" name="inst_C8DAB0EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="fire_o" x="1700" y="275" name="inst_45E7C099" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="fire_o" x="1750" y="225" name="inst_19FCAD8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ladder_o" x="1725" y="100" name="inst_66255105" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ladder_o" x="1725" y="150" name="inst_D16BAC18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="fire_o" x="1750" y="275" name="inst_19FCAD8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ladder_o" x="1775" y="100" name="inst_66255105" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ladder_o" x="1775" y="250" name="inst_D16BAC18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="pole_o" x="1650" y="75" name="inst_78AF458E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="pole_o" x="1650" y="125" name="inst_A8AC140B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="pole_o" x="1650" y="175" name="inst_0EF57460" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -611,6 +611,13 @@
     <instance objName="pole_o" x="1650" y="25" name="inst_D6D927BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="pole_o" x="2750" y="850" name="inst_827385A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="brick_brown_o" x="1550" y="75" name="inst_9550E4CD" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
+    <instance objName="ladder_o" x="1775" y="150" name="inst_9E87CF96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ladder_o" x="1775" y="200" name="inst_D08D6A7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="vine_o" x="1700" y="175" name="inst_0FE82514" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="vine_o" x="1700" y="125" name="inst_63FBE36B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="vine_o" x="1700" y="75" name="inst_9904BC91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="vine_o" x="1700" y="225" name="inst_B44C0521" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="vine_o" x="1700" y="25" name="inst_A56E8659" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
