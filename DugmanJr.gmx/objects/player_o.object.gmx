@@ -306,8 +306,8 @@ if(!death_flag){
             <string>draw_set_color(c_white)
 draw_text(10, 10, string(x) + " " + string(y))
 
-draw_sprite(spider_s, image_index, 900, 10)
-draw_text(960, 30, string(global.bombs))
+draw_sprite(spider_s, image_index, 800, 10)
+draw_text(860, 30, string(global.bombs))
 
 
 </string>

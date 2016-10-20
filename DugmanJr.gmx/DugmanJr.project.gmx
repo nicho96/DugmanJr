@@ -44,7 +44,8 @@
     <sprite>sprites\fire_s</sprite>
     <sprite>sprites\pointer_anim_2</sprite>
     <sprite>sprites\sound_s</sprite>
-    <sprite>sprites\sprite29</sprite>
+    <sprite>sprites\left_s</sprite>
+    <sprite>sprites\shift_s</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\nignt_b</background>
@@ -145,6 +146,8 @@
     <object>objects\menu_t</object>
     <object>objects\checkpoint_o</object>
     <object>objects\pooka_o</object>
+    <object>objects\shift_o</object>
+    <object>objects\left_o</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
