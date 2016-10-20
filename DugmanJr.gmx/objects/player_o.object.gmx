@@ -124,7 +124,7 @@ if(!death_flag){
    
     //Check for tile breaking
     if(keyboard_check(vk_right)){
-        if(place_meeting(x + 10, y, break_o)){
+        if(place_meeting(x + 10, y - 10, break_o)){
             with instance_place(x + 10, y, break_o) {
                 instance_destroy()
             }
@@ -138,7 +138,7 @@ if(!death_flag){
         }
     }
     if(keyboard_check(vk_left)){
-        if(place_meeting(x - 10, y, break_o)){
+        if(place_meeting(x - 10, y - 10, break_o)){
             with instance_place(x - 10, y, break_o) {
                 instance_destroy()
             }
@@ -249,6 +249,22 @@ if(!death_flag){
         }
     }
 }else{
+
+    offY = global.velY
+    //Set player's position to exact pixel, used for precise collision
+    if(place_meeting(x, y + global.velY, wall_o)){
+        if(global.velY &gt; 0){
+            global.ground = true
+        }
+        while(place_meeting(x, y + offY, wall_o) &amp;&amp; global.velY != 0){
+            offY -= global.velY / abs(global.velY)
+        }
+        climb_flag = false
+        global.velY += global.grav
+        y += offY
+    }
+    
+    global.bombs = global.check_bombs
     if(sprite_index != player_s_die){
         image_speed = 0.5
         sprite_index = player_s_die
@@ -258,7 +274,7 @@ if(!death_flag){
         image_speed = 0;
         sprite_index = player_s
         
-        room_goto(main)
+        room_goto(global.check_room)
       
         death_flag = false
     }
@@ -289,6 +305,8 @@ if(!death_flag){
             <string>draw_set_color(c_white)
 draw_text(10, 10, string(x) + " " + string(y))
 
+draw_sprite(spider_s, image_index, 900, 10)
+draw_text(960, 30, string(global.bombs))
 
 
 </string>
