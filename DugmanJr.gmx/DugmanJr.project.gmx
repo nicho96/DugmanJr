@@ -125,7 +125,6 @@
     <objects name="inate">
       <object>objects\bar_o</object>
       <object>objects\parralax_o</object>
-      <object>objects\sound_btn</object>
     </objects>
     <objects name="light">
       <object>objects\control</object>

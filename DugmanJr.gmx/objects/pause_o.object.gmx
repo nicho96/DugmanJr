@@ -5,35 +5,9 @@
   <visible>-1</visible>
   <depth>-500</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if ( mouse_check_button_pressed( mb_left ) )
-    {
-    show_message( object_get_name(object_index) );
-    }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -51,17 +25,25 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Step event
+            <string>if(global.pause){    
+    
+    if(global.sound)
+        draw_sprite(sound_s, 0, display_get_width()/4, display_get_height()/8 - 400);
+    else
+        draw_sprite(sound_s, 1, display_get_width()/4, display_get_height()/8 - 400);
+        // Step event
 if mouse_check_button_pressed(mb_left) { // Check if a mouse button was pressed; mb_left = left mouse-button
-    var inst = collision_point(mouse_x, mouse_y, sound_s, true, true); // Check the mouse_x/y position for an instance, store that instance-id in the variable inst
-    if inst != noone and global.sound then { // Add your condition here
-        // Do something; Add your statements here.
+    var inst = collision_point(mouse_x, mouse_y, sound_s, false, true); // Check the mouse_x/y position for an instance, store that instance-id in the variable inst
+    if inst then { 
+
         global.sound = 0
     }
     else {
         global.sound = 1
     }
+}        
 }
+
 </string>
           </argument>
         </arguments>
@@ -92,15 +74,15 @@ if mouse_check_button_pressed(mb_left) { // Check if a mouse button was pressed;
     draw_set_font(fnt_mono_lg);
     draw_set_color(c_white);
     draw_set_alpha(1);
-    draw_text(display_get_width()/4, display_get_height()/4, "GAME PAUSED")
-    
-    
+    draw_text(display_get_width()/4, display_get_height()+ 50, "GAME PAUSED")
+
     if(global.sound)
         draw_sprite(sound_s, 0, display_get_width()/4, display_get_height()/8);
     else
         draw_sprite(sound_s, 1, display_get_width()/4, display_get_height()/8);
-        
+    
 }
+
 </string>
           </argument>
         </arguments>
