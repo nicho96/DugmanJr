@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-100</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -28,10 +28,12 @@
             <string>image_speed = 0.5
 death_flag = false
 grumpy_flag = false
+gravity = 4
 movement_speed = 3
 alarm[0]=-1;
 movement_delay = random_range(20,50);
 
+pl_light_init(180, make_color_rgb(252, 150, 55), 0.4);
 freeze_flag = false
 
 /*
@@ -60,6 +62,7 @@ gravity = 10;*/
           <argument>
             <kind>1</kind>
             <string>//here so compiler doesnt remove it
+
 </string>
           </argument>
         </arguments>
@@ -84,6 +87,10 @@ gravity = 10;*/
             <kind>1</kind>
             <string>
 if(!death_flag){
+if(!place_meeting(x, y, wall_o)){
+      gravity = 0
+    }
+
 if(distance_to_object(player_o)&lt;100){
     grumpy_flag = true
 }

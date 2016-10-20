@@ -20,7 +20,6 @@
   <width>48</width>
   <height>48</height>
   <frames>
-    <frame index="0">images\sound_s_0.png</frame>
-    <frame index="1">images\sound_s_1.png</frame>
+    <frame index="0">images\sound_s_on_0.png</frame>
   </frames>
 </sprite>

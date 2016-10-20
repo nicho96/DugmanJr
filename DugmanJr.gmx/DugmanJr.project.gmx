@@ -43,9 +43,8 @@
     <sprite>sprites\pointer_s</sprite>
     <sprite>sprites\fire_s</sprite>
     <sprite>sprites\pointer_anim_2</sprite>
-    <sprite>sprites\sound_s</sprite>
-    <sprite>sprites\left_s</sprite>
-    <sprite>sprites\shift_s</sprite>
+    <sprite>sprites\sound_s_on</sprite>
+    <sprite>sprites\sound_s_off</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\nignt_b</background>
@@ -119,6 +118,7 @@
     </objects>
     <object>objects\arrow_o</object>
     <objects name="enemy">
+      <object>objects\pooka_o</object>
       <object>objects\enemy_o</object>
       <object>objects\spider_bomb_o</object>
       <object>objects\fygar_o</object>
@@ -146,9 +146,8 @@
     <object>objects\pause_o</object>
     <object>objects\menu_t</object>
     <object>objects\checkpoint_o</object>
-    <object>objects\pooka_o</object>
-    <object>objects\shift_o</object>
-    <object>objects\left_o</object>
+    <object>objects\object43</object>
+    <object>objects\shake_o</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
