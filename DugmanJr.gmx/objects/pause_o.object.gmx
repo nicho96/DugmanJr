@@ -31,7 +31,6 @@
     draw_set_alpha(0.7);
     draw_rectangle(0, 0, room_width, room_height, 0);
     
-    instance_create(display_get_width()/4, display_get_height()/8, sound_o)
     draw_set_halign(fa_center);
     draw_set_font(fnt_mono_lg);
     draw_set_color(c_white);
@@ -39,6 +38,10 @@
     draw_text(display_get_width()/4, display_get_height()/4 + 50, "GAME PAUSED")
  
     image_speed = 0  
+    instance_deactivate_all(true);
+}
+else{
+    instance_activate_all()
 }
 /*if(global.pause){    
     

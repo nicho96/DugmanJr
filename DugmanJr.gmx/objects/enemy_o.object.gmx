@@ -25,14 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x, y, player_o)){
+            <string>if(global.pause){exit;}
+
+if(place_meeting(x, y, player_o)){
     
     with(player_o){
     sprite_index = player_s_die
         death_flag = true
     image_speed = 0.5;
-    
-    
 
     if(player_o.sprite_index = 1){
         audio_play_sound(swoosh_s, 10, false)
