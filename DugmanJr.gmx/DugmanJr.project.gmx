@@ -44,8 +44,6 @@
     <sprite>sprites\fire_s</sprite>
     <sprite>sprites\pointer_anim_2</sprite>
     <sprite>sprites\sound_s_on</sprite>
-    <sprite>sprites\left_s</sprite>
-    <sprite>sprites\shift_s</sprite>
     <sprite>sprites\sound_s_off</sprite>
   </sprites>
   <backgrounds name="background">
@@ -149,8 +147,6 @@
     <object>objects\checkpoint_o</object>
     <object>objects\object43</object>
     <object>objects\shake_o</object>
-    <object>objects\shift_o</object>
-    <object>objects\left_o</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
