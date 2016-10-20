@@ -12,12 +12,15 @@
   <showcolour>-1</showcolour>
   <code>global.spawnx = 10
 global.spawny = 1800
-
 global.bombs = 0
 global.check_bombs = 0
 global.pause = 0
+<<<<<<< HEAD
+global.sound = 1</code>
+=======
 global.sound = 0
 global.check_room = main</code>
+>>>>>>> 65bfe97c9a9f3e07ac883ce99ecb4aa684beb23a
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>0</clearDisplayBuffer>
