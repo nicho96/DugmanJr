@@ -51,9 +51,7 @@ pl_light_init(90, make_color_rgb(252, 150, 55), 0.6);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
