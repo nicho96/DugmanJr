@@ -8,6 +8,42 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.pause){
+
+    if keyboard_check_pressed(ord("r")){
+    
+    global.pause = 0
+     
+        room_goto(global.check_room)
+    }
+    if keyboard_check_pressed(ord("R")){
+    global.pause = 0
+        room_goto(global.check_room)
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -36,12 +72,18 @@
     draw_set_color(c_white);
     draw_set_alpha(1);
     draw_text(display_get_width()/4, display_get_height()/4 + 50, "GAME PAUSED")
+    
+
+    draw_set_font(fnt_mono_sm);
+    draw_set_color(c_red);
+    draw_text(display_get_width()/4, display_get_height()/4 + 100, "Press 'r' to restart (You will lose everything).")
+    
  
     image_speed = 0  
     instance_deactivate_all(true);
 }
 else{
-    instance_activate_all()
+    //instance_activate_all()
 }
 /*if(global.pause){    
     
@@ -90,6 +132,7 @@ if mouse_check_button_pressed(mb_left) { // Check if a mouse button was pressed;
 }
 else{
     global.pause = 0;
+    instance_activate_all()
 }
 </string>
           </argument>

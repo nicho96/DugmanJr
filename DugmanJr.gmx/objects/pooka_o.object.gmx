@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.5
+            <string>/*image_speed = 0.5
+ground = false
 death_flag = false
 grumpy_flag = false
 gravity = 4
@@ -35,33 +36,20 @@ movement_delay = random_range(20,50);
 
 pl_light_init(180, make_color_rgb(252, 150, 55), 0.4);
 freeze_flag = false
+*/
 
-/*
-gravity_direction = 270; //Gravity
-gravity = 10;*/
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//here so compiler doesnt remove it
+//variables
+death_flag = false
+dir = -1 
+movespeed = 4 
+grav = 0.2 
+hsp = 0 
+vsp = 0
+
+image_speed = 0.5
+sprite_index = pooka_s_walking
+//pl_light_init(90, make_color_rgb(252, 150, 55), 0.8);
+
 
 </string>
           </argument>
@@ -85,7 +73,53 @@ gravity = 10;*/
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>hsp = dir * movespeed
+vsp += grav
+if(!death_flag){
+if(place_meeting(x+hsp, y,wall_o)){
+    while(!place_meeting(x+sign(hsp),y,wall_o)){
+        x+=sign(hsp); 
+    }
+        hsp = 0; 
+        dir *= -1
+}
+if(place_meeting(x, y+vsp, wall_o)){
+    while(!place_meeting(x, y+sign(vsp), wall_o)){
+        y+=sign(vsp); 
+    }
+    
+        vsp = 0; 
+        }        
+
+        x+= hsp;    
+        y+= vsp;
+
+        
+        
+if(dir&gt; 0 and image_xscale!=1)       
+    image_xscale = 1
+else if(dir&lt; 0 and image_xscale!=-1) 
+    image_xscale = -1
+
+
+if(place_meeting(x, y, fall_o)){
+    death_flag = true
+}
+}
+else if(death_flag){
+    if(sprite_index != pooka_s_die){
+        sprite_index = pooka_s_die
+        image_speed = 0.2
+        movespeed = 0
+        if(image_index == 6){
+            image_speed = 0
+            image_index = 6
+        }
+    }
+    
+}
+
+/*
 if(!death_flag){
 if(!place_meeting(x, y, wall_o)){
       gravity = 0
@@ -146,7 +180,7 @@ if(grumpy_flag){
 }
 else{
     movement_speed = 3
-}*/
+}*//*
 movement_speed = 3
 
 
@@ -192,12 +226,39 @@ if(place_meeting(x, y, player_o)){
         
     }
 }
-}
+}*/
 
 
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(sprite_index = pooka_s_die)
+{
+            image_speed = 0
+            image_index = 6
+            }
 </string>
           </argument>
         </arguments>

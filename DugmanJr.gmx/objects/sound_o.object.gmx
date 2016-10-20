@@ -97,7 +97,7 @@ if (mouse_check_button_pressed(mb_left))
             <kind>1</kind>
             <string>
     x = view_wview[0] * 1.15
-    y = view_hview[0] * 0.08
+    y = view_hview[0] * 0.05
     draw_self()
     
 

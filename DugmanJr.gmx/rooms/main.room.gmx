@@ -285,10 +285,6 @@
     <instance objName="light_sprite_o" x="225" y="1575" name="inst_35C41845" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="light_sprite_o" x="375" y="1800" name="inst_E3DBB21A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="light_sprite_o" x="675" y="1500" name="inst_A590E6AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="fire_o" x="250" y="1930" name="inst_76E4636C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="fire_o" x="300" y="1930" name="inst_2D40578B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="fire_o" x="350" y="1930" name="inst_26ED3C44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="fire_o" x="400" y="1930" name="inst_98CEE25E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="brick_brown_o" x="200" y="1425" name="inst_759150C1" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
     <instance objName="brick_brown_o" x="150" y="1425" name="inst_BAF9A98D" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
     <instance objName="brick_brown_o" x="100" y="1425" name="inst_5A16C2FF" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
@@ -458,9 +454,6 @@
     <instance objName="fire_o" x="1350" y="745" name="inst_1F4B2F09" locked="0" code="" scaleX="1" scaleY="2.96000003814697" colour="4294967295" rotation="0"/>
     <instance objName="fire_o" x="1450" y="745" name="inst_3924181E" locked="0" code="" scaleX="1" scaleY="2.96000003814697" colour="4294967295" rotation="0"/>
     <instance objName="fire_o" x="1550" y="745" name="inst_F731F57A" locked="0" code="" scaleX="1" scaleY="2.96000003814697" colour="4294967295" rotation="0"/>
-    <instance objName="brick_brown_o" x="850" y="-50" name="inst_4BF71C0B" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
-    <instance objName="brick_brown_o" x="850" y="-100" name="inst_554C3BA2" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
-    <instance objName="brick_brown_o" x="850" y="-150" name="inst_16B4746D" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
     <instance objName="ladder_o" x="925" y="200" name="inst_27150F18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fire_o" x="1050" y="745" name="inst_75FF7178" locked="0" code="" scaleX="1" scaleY="2.96000003814697" colour="4294967295" rotation="0"/>
     <instance objName="box_o" x="1075" y="700" name="inst_79E84D87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -543,8 +536,6 @@
     <instance objName="brick_brown_o" x="1550" y="125" name="inst_D7F05711" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
     <instance objName="brick_brown_o" x="1550" y="25" name="inst_757DF1B9" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
     <instance objName="brick_brown_o" x="1550" y="-25" name="inst_31449896" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
-    <instance objName="brick_brown_o" x="1550" y="-75" name="inst_A84DC71B" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
-    <instance objName="brick_brown_o" x="1550" y="-125" name="inst_57A381D7" locked="0" code="" scaleX="1" scaleY="1.28205132484436" colour="4294967295" rotation="0"/>
     <instance objName="vine_o" x="1000" y="175" name="inst_AEBF0C7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="vine_o" x="1100" y="175" name="inst_5229FAFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="vine_o" x="1200" y="175" name="inst_1058E083" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -616,6 +607,9 @@
     <instance objName="vine_o" x="1700" y="75" name="inst_9904BC91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="vine_o" x="1700" y="225" name="inst_B44C0521" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="vine_o" x="1700" y="25" name="inst_A56E8659" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="pause_o" x="75" y="25" name="inst_B23A4CEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="shake_o" x="150" y="200" name="inst_7A3C8C62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="pooka_o" x="275" y="1850" name="inst_EBAA264C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
