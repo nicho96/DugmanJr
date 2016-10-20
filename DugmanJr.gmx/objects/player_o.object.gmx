@@ -60,7 +60,7 @@ y = global.spawny
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.pause) exit;
+            <string>
 var velocity = 7
 var offX = 0
 var offY = 0
