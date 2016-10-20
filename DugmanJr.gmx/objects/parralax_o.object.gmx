@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>bgParallax[0] = 0; //use numbers if you know how many backgrounds exist, 0 otherwise
 
-for(var i = 0; background_visible[i]-1; i++){
+for(var i = 0; background_visible[i]; i++){
     bgParallax[i] = background_x[i] /100;
 } 
 </string>
@@ -54,9 +54,8 @@ for(var i = 0; background_visible[i]-1; i++){
             <kind>1</kind>
             <string>view_xview += 5 * keyboard_check(ord('D')) - keyboard_check(ord('A'))
 
-    for(var i = 0; background_visible[i]-1; i++){
-        background_x[i] = bgParallax[i] * view_xview;
-        
+    for(var i = 0; background_visible[i]; i++){
+        background_x[i] = bgParallax[i] * view_xview;  
             
     }
 </string>

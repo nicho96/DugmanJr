@@ -43,6 +43,7 @@
     <sprite>sprites\pointer_s</sprite>
     <sprite>sprites\fire_s</sprite>
     <sprite>sprites\pointer_anim_2</sprite>
+    <sprite>sprites\sound_s</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\nignt_b</background>
@@ -124,6 +125,7 @@
     <objects name="inate">
       <object>objects\bar_o</object>
       <object>objects\parralax_o</object>
+      <object>objects\sound_btn</object>
     </objects>
     <objects name="light">
       <object>objects\control</object>
