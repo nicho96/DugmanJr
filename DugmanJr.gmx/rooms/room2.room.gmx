@@ -10,9 +10,11 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.spawnx = 10
+  <code>audio_stop_all()
+global.spawnx = 10
 global.spawny = 1800
-
+//global.spawnx = 1875
+//global.spawny = 1250
 global.bombs = 0
 global.check_bombs = 0
 global.pause = 0

@@ -122,6 +122,7 @@
       <object>objects\enemy_o</object>
       <object>objects\spider_bomb_o</object>
       <object>objects\fygar_o</object>
+      <object>objects\fygar_inert_o</object>
       <object>objects\fire_o</object>
     </objects>
     <objects name="inate">
