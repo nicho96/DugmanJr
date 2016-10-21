@@ -565,11 +565,6 @@
     <instance objName="vine_o" x="1850" y="75" name="inst_9904BC91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="vine_o" x="1700" y="275" name="inst_B44C0521" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="vine_o" x="1700" y="25" name="inst_A56E8659" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-<<<<<<< HEAD
-    <instance objName="pause_o" x="75" y="25" name="inst_B23A4CEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="shake_o" x="150" y="200" name="inst_7A3C8C62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="pooka_o" x="331" y="1893" name="inst_157C069C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-=======
     <instance objName="vine_o" x="1850" y="225" name="inst_42AEED88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="pole_o" x="1650" y="225" name="inst_2FBBF745" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="pole_o" x="1800" y="25" name="inst_00420C0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -863,7 +858,6 @@
     <instance objName="spider_bomb_o" x="550" y="1350" name="inst_85CCE461" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="spider_bomb_o" x="550" y="80" name="inst_4C63C107" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="arrow_o" x="2950" y="1370" name="inst_D2E46463" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
->>>>>>> 741093564db938bedf1ec920503d472667e253de
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

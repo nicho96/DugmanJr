@@ -3,7 +3,7 @@
   <spriteName>fygar_s_walk</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-100</depth>
+  <depth>-101</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -85,68 +85,103 @@ vsp = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>with(fygar_o){
 if(!death_flag){
 
 
 vsp += grav
+
 if(place_meeting(x, y+vsp, wall_o)){
     while(!place_meeting(x, y+sign(vsp), wall_o)){
         y+=sign(vsp); 
     }
     
         vsp = 0; 
-        }            
-        y+= vsp;
+        }         
 
+        y+= vsp;
 if(distance_to_object(player_o)&lt;100){
     grumpy_flag = true
 }
 else if(grumpy_flag &amp;&amp; distance_to_object(player_o)&gt;350){ //get awayyyyy
     grumpy_flag = false
 }
+if(alarm[0]==-1 &amp;&amp; !grumpy_flag &amp;&amp; !death_flag){
 
-if(alarm[0]==-1 &amp;&amp; !grumpy_flag){
+    
 
     movement_delay = random_range(5, 20);
     distance = random_range(-5,15)
-        
-    if(distance&gt;=0 &amp;&amp; distance &lt; 5){        
-        move_towards_point(fygar_o.x +abs(distance), fygar_o.y, movement_speed)
+   
+   if(distance&gt;=0 &amp;&amp; distance &lt; 5){        
+   
+        move_towards_point(x +abs(distance), y, movement_speed)
         image_xscale = -1
-        sprite_index = fygar_s_walk
-        image_speed = 0.5
-    }else if(distance&lt;0){ 
-        move_towards_point(fygar_o.x - abs(distance), fygar_o.y, movement_speed)
+        if(place_meeting(x, y,wall_o)){
+            sprite_index = fygar_wall
+            image_speed = 0.3
+            }
+        else{
+            sprite_index = fygar_s_walk
+            image_speed = 0.5
+        }
+    }else if(distance&lt;0){
+            move_towards_point(x - abs(distance), y, movement_speed)
         image_xscale = 1
-        sprite_index = fygar_s_walk
-        image_speed = 0.5
+         if(place_meeting(x, y,wall_o)){
+            sprite_index = fygar_wall
+            image_speed = 0.3
+            }
+        else{
+            sprite_index = fygar_s_walk
+            image_speed = 0.5
+        }
     }else{
         sprite_index = fygar_s_stand
         image_speed = 0.3
-        move_towards_point(fygar_o.x, fygar_o.y, 0)
-        movement_delay = random_range(25, 50);
+        
+        move_towards_point(x, y, 0)
+        movement_delay = random_range(15, 35);
     }
-    
     alarm[0] = movement_delay;
+    
 }
 
 if(grumpy_flag){
-    sprite_index = fygar_s_walk_angry
     image_speed = 1
     movement_speed = 5
     
     if(player_o.x &gt; fygar_o.x +15){
-        if(!place_meeting(x, y, wall_o))
-            move_towards_point(player_o.x, fygar_o.y, movement_speed)
+        if(place_meeting(x, y,wall_o)){
+            sprite_index = fygar_wall
+            image_speed = 0.3
+            }
+        else{
+            sprite_index = fygar_s_walk_angry
+            image_speed = 0.5
+        }
+            move_towards_point(player_o.x, y, movement_speed)
         image_xscale = -1
     }else if(player_o.x &lt; fygar_o.x -15){
-        if(!place_meeting(x, y, wall_o))
-            move_towards_point(player_o.x, fygar_o.y, movement_speed)
+        if(place_meeting(x, y,wall_o)){
+            sprite_index = fygar_wall
+            image_speed = 0.3
+            }
+        else{
+            sprite_index = fygar_s_walk_angry
+            image_speed = 0.5
+        }
+            move_towards_point(player_o.x, y, movement_speed)
         image_xscale = 1
     }else{
-        image_speed = 0.5
-        sprite_index = fygar_s_walk_angry
+         if(place_meeting(x, y,wall_o)){
+            sprite_index = fygar_wall
+            image_speed = 0.3
+            }
+        else{
+            sprite_index = fygar_s_walk_angry
+            image_speed = 0.5
+        }
     }
     
 }
@@ -154,32 +189,80 @@ else{
     movement_speed = 3
 }
 
-
 if(place_meeting(x, y, fall_o)){
     death_flag = true
+        move_towards_point(x, y, 0)
 }
 
-}else if(death_flag &amp;&amp; !freeze_flag){
+}else if(death_flag){
 
-    if(sprite_index != fyrgo_s_die){
-        sprite_index = fyrgo_s_die
-        image_speed = 0.1
-        speed = 0
-        if(!freeze_flag &amp;&amp; image_index == 15){
+    if(sprite_index != fygar_s_die){
+        sprite_index = fygar_s_die
+        image_speed = 0.3
+        movespeed = 0
+        if(image_index == 14){
             image_speed = 0
-            image_index = 15 
-            freeze_flag = true
+            image_index = 14
         }
     }
     
-}else{
-    image_speed = 0
-    image_index = 15
 }
 
 
+if(!death_flag){
+if(place_meeting(x, y, player_o)){
+    
+    with(player_o){
+    sprite_index = player_s_die
+        death_flag = true
+    image_speed = 0.5;
 
+    if(player_o.sprite_index = 1){
+        audio_play_sound(swoosh_s, 10, false)
+    }
 
+    if (image_index &gt; 53){
+        image_speed = 0;
+        sprite_index = player_s
+
+            room_goto(main)
+
+            death_flag = false
+        
+    }
+}
+}
+}
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(sprite_index = fygar_s_die)
+{   if(global.sound)
+    audio_play_sound(explosion, 2, false);
+            image_speed = 0
+            image_index = 14
+            }
 </string>
           </argument>
         </arguments>

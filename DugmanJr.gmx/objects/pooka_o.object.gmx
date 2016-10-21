@@ -28,7 +28,7 @@
             <string>death_flag = false
 dir = -1 
 movespeed = 4 
-grav = 0.2 
+grav = 0.4
 hsp = 0 
 vsp = 0
 

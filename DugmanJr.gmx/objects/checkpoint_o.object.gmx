@@ -56,6 +56,10 @@ active = false
     global.check_bombs = global.bombs
     sprite_index = pointer_anim_2
     active = true
+    
+    
+    if(global.sound)
+    audio_play_sound(checkpoint, 2, false);
 }
 </string>
           </argument>

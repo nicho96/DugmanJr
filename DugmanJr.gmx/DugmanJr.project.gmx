@@ -9,6 +9,10 @@
     <sound>sound\silence_snow_s</sound>
     <sound>sound\swoosh_s</sound>
     <sound>sound\jump_s_v2</sound>
+    <sound>sound\coinsound</sound>
+    <sound>sound\checkpoint</sound>
+    <sound>sound\newjump</sound>
+    <sound>sound\explosion</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\wood_s</sprite>
@@ -28,11 +32,14 @@
     <sprite>sprites\player_s_climb</sprite>
     <sprite>sprites\player_s_die</sprite>
     <sprites name="fygar">
-      <sprite>sprites\fyrgo_s_die</sprite>
+      <sprite>sprites\fygar_s_die</sprite>
+      <sprite>sprites\fygar_s_diebl</sprite>
       <sprite>sprites\fygar_s_stand_angry</sprite>
       <sprite>sprites\fygar_s_walk_angry</sprite>
       <sprite>sprites\fygar_s_stand</sprite>
+      <sprite>sprites\fygar_s_standbl</sprite>
       <sprite>sprites\fygar_s_walk</sprite>
+      <sprite>sprites\fygar_s_walkbl</sprite>
     </sprites>
     <sprites name="pooka">
       <sprite>sprites\pooka_s_standing</sprite>
@@ -45,12 +52,14 @@
     <sprite>sprites\pointer_anim_2</sprite>
     <sprite>sprites\sound_s_on</sprite>
     <sprite>sprites\sound_s_off</sprite>
+    <sprite>sprites\fygar_wall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\nignt_b</background>
     <background>background\stars_b</background>
     <background>background\bg2_b</background>
     <background>background\bg3_b</background>
+    <background>background\bg33_b</background>
     <background>background\bg4_b</background>
     <background>background\bg5_b</background>
   </backgrounds>
@@ -152,7 +161,6 @@
   <rooms name="rooms">
     <room>rooms\room2</room>
     <room>rooms\main</room>
-    <room>rooms\main_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

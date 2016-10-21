@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1000</width>
   <height>650</height>
-  <vsnap>50</vsnap>
-  <hsnap>50</hsnap>
+  <vsnap>25</vsnap>
+  <hsnap>25</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -81,12 +81,17 @@ global.check_room = main</code>
     <instance objName="box_o" x="900" y="350" name="inst_F4561275" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="box_o" x="950" y="350" name="inst_400EBD85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="control" x="0" y="0" name="inst_527A6E2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="light_sprite_o" x="300" y="500" name="inst_178EC916" locked="0" code="" scaleX="1.5306122303009" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="light_sprite_o" x="700" y="500" name="inst_F04AC81C" locked="0" code="" scaleX="1.5306122303009" scaleY="1.86868691444397" colour="4294967295" rotation="0"/>
-    <instance objName="menu_o" x="402" y="476" name="inst_180E0D61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="light_sprite_o" x="300" y="450" name="inst_178EC916" locked="0" code="" scaleX="1.5306122303009" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="light_sprite_o" x="700" y="450" name="inst_F04AC81C" locked="0" code="" scaleX="1.5306122303009" scaleY="1.86868691444397" colour="4294967295" rotation="0"/>
+    <instance objName="menu_o" x="391" y="433" name="inst_180E0D61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="menu_t" x="450" y="50" name="inst_9EDF2EBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="fygar_o" x="725" y="319" name="inst_4DD93ADB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="pooka_o" x="274" y="323" name="inst_7DC49029" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="fygar_o" x="500" y="250" name="inst_4DD93ADB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="pooka_o" x="294" y="290" name="inst_7DC49029" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="box_o" x="1025" y="300" name="inst_5F358A6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="box_o" x="1025" y="250" name="inst_F11414E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="box_o" x="1000" y="350" name="inst_51D8C21B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="box_o" x="1025" y="200" name="inst_311EFC1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="box_o" x="-25" y="300" name="inst_E96A34A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -133,7 +133,7 @@ if(!death_flag){
     global.velY = -22
     global.ground = false
     if(global.sound)
-    audio_play_sound(jump_s_v2, 2, false);
+    audio_play_sound(newjump, 2, false);
     show_debug_message("JUMP")
   }
    
@@ -141,6 +141,8 @@ if(!death_flag){
     if(keyboard_check(vk_right)){
         if(place_meeting(x + 10, y - 10, break_o)){
             with instance_place(x + 10, y, break_o) {
+                if(global.sound)
+                audio_play_sound(explosion, 2, false);
                 instance_destroy()
             }
         }
@@ -148,6 +150,8 @@ if(!death_flag){
     if(keyboard_check(vk_up)){
         if(place_meeting(x, y - 10, break_o)){
             with instance_place(x, y - 10, break_o) {
+                if(global.sound)
+                audio_play_sound(explosion, 2, false);
                 instance_destroy()
             }
         }
@@ -155,6 +159,9 @@ if(!death_flag){
     if(keyboard_check(vk_left)){
         if(place_meeting(x - 10, y - 10, break_o)){
             with instance_place(x - 10, y, break_o) {
+                
+    if(global.sound)
+    audio_play_sound(explosion, 2, false);
                 instance_destroy()
             }
         }
@@ -162,6 +169,9 @@ if(!death_flag){
     if(keyboard_check(vk_down)){
         if(place_meeting(x, y + 10, break_o)){
             with instance_place(x, y + 10, break_o) {
+            
+    if(global.sound)
+    audio_play_sound(explosion, 2, false);
                 instance_destroy()
             }
         }
@@ -283,6 +293,7 @@ if(!death_flag){
     if(sprite_index != player_s_die){
         image_speed = 0.5
         sprite_index = player_s_die
+        
         audio_play_sound(swoosh_s, 10, false)
     }
     if (image_index &gt; 53){
