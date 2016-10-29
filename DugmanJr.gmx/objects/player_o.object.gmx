@@ -294,6 +294,7 @@ if(!death_flag){
         image_speed = 0.5
         sprite_index = player_s_die
         
+        if(global.sound)
         audio_play_sound(swoosh_s, 10, false)
     }
     if (image_index &gt; 53){
@@ -330,10 +331,13 @@ if(!death_flag){
             <kind>1</kind>
             <string>draw_set_color(c_white)
 draw_set_font(fnt_mono_sm)
-draw_text(10, 10, string(x) + " " + string(y))
+draw_set_halign(fa_left)
+draw_text(20, 20, string(x) + " " + string(y))
 
-draw_sprite(spider_s, image_index, 800, 10)
-draw_text(860, 30, string(global.bombs))
+draw_sprite_ext(spider_s, image_index, 700, 10, 1.2, 1.2, 0, c_white,1)
+
+
+draw_text(760, 30, string(global.bombs))
 
 
 </string>

@@ -13,6 +13,7 @@
     <sound>sound\checkpoint</sound>
     <sound>sound\newjump</sound>
     <sound>sound\explosion</sound>
+    <sound>sound\into</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\wood_s</sprite>
@@ -53,6 +54,7 @@
     <sprite>sprites\sound_s_on</sprite>
     <sprite>sprites\sound_s_off</sprite>
     <sprite>sprites\fygar_wall</sprite>
+    <sprite>sprites\pause_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\nignt_b</background>

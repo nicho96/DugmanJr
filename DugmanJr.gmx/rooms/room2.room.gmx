@@ -19,7 +19,8 @@ global.bombs = 0
 global.check_bombs = 0
 global.pause = 0
 global.sound = 1
-global.check_room = main</code>
+global.check_room = main
+audio_play_sound(into, 2, false)</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>0</clearDisplayBuffer>
